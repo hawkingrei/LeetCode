@@ -1,6 +1,6 @@
 dx = [1,-1,0,0]
 dy = [0,0,1,-1]
-
+'''
 class Solution(object):
     def totalNQueens(self, n):
     	if n < 1 : return []
@@ -36,9 +36,26 @@ class Solution(object):
     			board.append("." * i + "Q" + '.'*(n-i-1))
 
     	return [board[i:i+n] for i in range(0,len(board),n)]
-
+'''
+class Solution(object):
+    def totalNQueens(self, n):
+        if n < 1 : return []
+        self.count = 0
+        self.DFS(n,0,0,0,0)
+        return self.count
+    def DFS(self,n,row,cols,pie,na):
+        if row >= n:
+            self.count += 1
+            return
+        for col in range(n):
+            if cols & ( 1<<col) or (1<<(row+col)) & pie or (1<<(row-col + n -1)) & na:
+                continue
+            self.DFS(n,row+1,
+                (1<<col)|cols,
+                (1<<(row+col))|pie,
+                (1<<(row-col + n -1)) |na)
 if __name__ == '__main__':
 	sol = Solution()
-	print sol.solveNQueens(3)
-	print sol.solveNQueens(4)
-	print sol.solveNQueens(5)
+	print sol.totalNQueens(3)
+	print sol.totalNQueens(4)
+	print sol.totalNQueens(5)
