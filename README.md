@@ -19,7 +19,7 @@
 	1.	  Two Sum
 	3.	  Longest Substring Without Repeating Characters
 	18.	  4Sum
-	136	. Single Number
+	136. Single Number
 
 ### Linked List
   
