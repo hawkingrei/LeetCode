@@ -16,9 +16,9 @@
 	121. Best Time to Buy and Sell Stock
 	122. Best Time to Buy and Sell Stock II
 ### Hash
-	1.	  Two Sum
-	3.	  Longest Substring Without Repeating Characters
-	18.	  4Sum
+	1.	 Two Sum
+	3.	 Longest Substring Without Repeating Characters
+	18.	 4Sum
 	136.  Single Number
 
 ### Linked List
