@@ -15,34 +15,41 @@ pub fn full_justify(words: Vec<String>, max_width: i32) -> Vec<String> {
             let mut space_num = if words_num == 1 { 1 } else { words_num - 1 };
             let mut space_additional = 0;
             let mut space_avg = 0;
+
             if (index > len && !tmp_vec.is_empty()) {
                 space_additional = 0;
                 space_avg = 1;
-                space_num = if words_num == 1 { 1 } else { words_num };
+                space_num = if words_num == 1 { 0 } else { words_num - 1 };
+                while words_num != 0 || space_num != 0 {
+                    if words_num != 0 {
+                        final_word.push_str(&tmp_vec.get(tmp_vec.len() - words_num).unwrap());
+                        words_num -= 1;
+                    }
+                    if space_num != 0 {
+                        space_num -= 1;
+                        final_word.push(' ');
+                    }
+                }
+                final_word.push_str(&" ".repeat(max_width as usize - final_word.len()));
             } else {
                 space_additional = (max_width - tmp_count) % space_num as i32;
                 space_avg = (max_width - tmp_count - space_additional) / space_num as i32;
+                while words_num != 0 || space_num != 0 {
+                    if words_num != 0 {
+                        final_word.push_str(&tmp_vec.get(tmp_vec.len() - words_num).unwrap());
+                        words_num -= 1;
+                    }
+                    if space_num != 0 {
+                        space_num -= 1;
+                        final_word.push_str(&" ".repeat((space_avg).try_into().unwrap()));
+                        if space_additional > 0 {
+                            final_word.push(' ');
+                            space_additional -= 1;
+                        }
+                    }
+                }
             }
 
-            while words_num != 0 || space_num != 0 {
-                if words_num != 0 {
-                    final_word.push_str(&tmp_vec.get(tmp_vec.len() - words_num).unwrap());
-                    words_num -= 1;
-                }
-                if space_num != 0 {
-                    space_num -= 1;
-                    if first_space {
-                        final_word.push_str(
-                            &(0..space_avg + space_additional)
-                                .map(|_| " ")
-                                .collect::<String>(),
-                        );
-                        first_space = false;
-                        continue;
-                    }
-                    final_word.push_str(&(0..space_avg).map(|_| " ").collect::<String>());
-                }
-            }
             result.push(final_word);
             tmp_vec.clear();
             tmp_count = 0;
@@ -66,18 +73,73 @@ pub fn full_justify(words: Vec<String>, max_width: i32) -> Vec<String> {
 #[cfg(test)]
 mod tests {
     use crate::full_justify;
+
+    #[macro_export]
+    macro_rules! vec_string {
+    ($($e:expr),*) => {vec![$($e.to_owned()), *]};
+    ($($e:expr,)*) => {vec![$($e.to_owned()), *]};
+}
     #[test]
     fn it_works() {
-        let words: Vec<String> = vec![
-            "This".to_string(),
-            "is".to_string(),
-            "an".to_string(),
-            "example".to_string(),
-            "of".to_string(),
-            "text".to_string(),
-            "justification.".to_string(),
-        ];
-        let maxWidth = 16;
-        println!("{:?}", full_justify(words, maxWidth));
+        #[test]
+        fn test_68() {
+            assert_eq!(
+                full_justify(
+                    vec_string![
+                        "This",
+                        "is",
+                        "an",
+                        "example",
+                        "of",
+                        "text",
+                        "justification."
+                    ],
+                    16
+                ),
+                vec_string!["This    is    an", "example  of text", "justification.  "]
+            );
+
+            assert_eq!(
+                full_justify(
+                    vec_string!["What", "must", "be", "acknowledgment", "shall", "be"],
+                    16
+                ),
+                vec_string!["What   must   be", "acknowledgment  ", "shall be        "]
+            );
+
+            assert_eq!(
+                full_justify(
+                    vec_string![
+                        "Science",
+                        "is",
+                        "what",
+                        "we",
+                        "understand",
+                        "well",
+                        "enough",
+                        "to",
+                        "explain",
+                        "to",
+                        "a",
+                        "computer.",
+                        "Art",
+                        "is",
+                        "everything",
+                        "else",
+                        "we",
+                        "do"
+                    ],
+                    20
+                ),
+                vec_string![
+                    "Science  is  what we",
+                    "understand      well",
+                    "enough to explain to",
+                    "a  computer.  Art is",
+                    "everything  else  we",
+                    "do                  ",
+                ]
+            );
+        }
     }
 }
