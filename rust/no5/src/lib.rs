@@ -6,7 +6,6 @@ pub fn longest_palindrome(s: String) -> String {
     let mut max = 1;
     let mut result = s[..1].to_string();
 
-    
     // init 2
     for j in 1..s.len() {
         for i in 0..s.len() {
@@ -14,32 +13,28 @@ pub fn longest_palindrome(s: String) -> String {
                 continue;
             }
             if j <= 2 {
-                if is_palindrome(s[i..i + j +1 ].to_string()) {
+                if is_palindrome(s[i..i + j + 1].to_string()) {
                     dp[i][i + j] = true;
                     if j + 1 > max {
                         max = j + 1;
-                        result = s[i..i + j+ 1].to_string();
+                        result = s[i..i + j + 1].to_string();
                     }
                 } else {
                     dp[i][i + j] = false;
                 }
             } else {
-                if i + 1 >= 0 && i + j - 1 < s.len() - 1 {
-                    if dp[i + 1][i + j - 1] {
-                        if s.chars().nth(i).unwrap() == s.chars().nth(i + j).unwrap() {
-                            dp[i][i + j] = true;
-                            if j + 1 > max {
-                                max = j + 1;
-                                result = s[i..i + j+1].to_string();
-                            }
-                        } else {
-                            dp[i][i + j] = false
+                if dp[i + 1][i + j - 1] {
+                    if s.chars().nth(i).unwrap() == s.chars().nth(i + j).unwrap() {
+                        dp[i][i + j] = true;
+                        if j + 1 > max {
+                            max = j + 1;
+                            result = s[i..i + j + 1].to_string();
                         }
                     } else {
                         dp[i][i + j] = false
                     }
                 } else {
-                    dp[i][i + j] = is_palindrome(s[i..i + j+1].to_string())
+                    dp[i][i + j] = false
                 }
             }
         }
@@ -57,6 +52,42 @@ fn is_palindrome(s: String) -> bool {
         }
     }
     return true;
+}
+
+pub fn longest_palindrome2(s: String) -> String {
+    let seq: Vec<char> = s.chars().collect();
+    let len = seq.len();
+    if len < 1 {
+        return s;
+    }
+    let (mut idx, mut curr_len, mut curr_start, mut curr_end) = (0, 0, 0, 0);
+    while idx < len {
+        let (mut i, mut j) = (idx, idx);
+        let ch = seq[idx];
+        // handle same char
+        while i > 0 && seq[i - 1] == ch {
+            i -= 1
+        }
+        while j < len - 1 && seq[j + 1] == ch {
+            j += 1
+        }
+        idx = j + 1;
+        while i > 0 && j < len - 1 && seq[i - 1] == seq[j + 1] {
+            i -= 1;
+            j += 1;
+        }
+        let max_len = j - i + 1;
+        if max_len > curr_len {
+            curr_len = max_len;
+            curr_start = i;
+            curr_end = j;
+        }
+        if max_len >= len - 1 {
+            break;
+        }
+    }
+
+    s[curr_start..curr_end + 1].to_owned()
 }
 
 #[cfg(test)]
