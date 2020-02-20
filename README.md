@@ -4,7 +4,7 @@
 
 | # | Title | Solution | Difficulty | Language |
 |---| ----- | -------- | ---------- | -------- |
-| 1 | Two Sum|         | Easy | Python 
+| 1 | Two Sum|         | Easy | Python |
 | 11 | Container With Most Water |  | Medium | C++ |
 | 15 | 3Sum |          |Medium | Python |
 | 16 | 3Sum Closest | | Medium | Python |
