@@ -30,10 +30,19 @@
 | 689 | Maximum Sum of 3 Non-Overlapping Subarrays | | Hard | Golang |
 
 ### Hash
-	1.   Two Sum
-	3.   Longest Substring Without Repeating Characters
-	18.  4Sum
-	136. Single Number
+
+| # | Title | Solution | Difficulty | Language |
+| 1 | Two Sum | | Easy | Python |
+| 3 | Longest Substring Without Repeating Characters | |Medium | Python |
+| 18 | 4Sum | | Medium | Python |
+| 49 | Group Anagrams | | Medium | Rust |
+| 94 | Binary Tree Inorder Traversal | | Medium | Golang |
+| 136 | Single Number | | Easy | Python |
+| 380 | Insert Delete GetRandom O(1) | | Medium | Rust |
+| 381 | Insert Delete GetRandom O(1) - Duplicates allowed | | Medium | Rust | 
+| 409 | Longest Palindrome | | Easy | Golang |
+| 500 | Keyboard Row | | Easy | Golang |
+
 
 ### Linked List
   
