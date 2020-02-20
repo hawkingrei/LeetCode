@@ -39,15 +39,16 @@
 | 94 | Binary Tree Inorder Traversal | | Medium | Golang |
 | 136 | Single Number | | Easy | Python |
 | 380 | Insert Delete GetRandom O(1) | | Medium | Rust |
-| 381 | Insert Delete GetRandom O(1) - Duplicates allowed | | Medium | Rust | 
+| 381 | Insert Delete GetRandom O(1) - Duplicates allowed | | Medium | Rust |
 | 409 | Longest Palindrome | | Easy | Golang |
 | 500 | Keyboard Row | | Easy | Golang |
 
 ### Dynamic programming
+
 | # | Title | Solution | Difficulty | Language |
 | 5 | Longest Palindromic Substring | | Medium | Rust |
 | 10 | Regular Expression Matching | | Hard | Python |
-| 53 | Maximum Subarray | | Easy | Python | 
+| 53 | Maximum Subarray | | Easy | Python |
 | 62 | Unique Paths | | Medium | Python |
 | 63 | Unique Paths II | | Medium | Python |
 | 64 | Minimum Path Sum | | Medium | Python |
@@ -64,7 +65,7 @@
 | 213 | House Robber II | | Medium | Rust |
 | 221 | Maximal Square | | Medium | Golang |
 | 300 | Longest Increasing Subsequence | | Medium | Python |
-| 303 | Range Sum Query - Immutable	| | Easy | Golang |
+| 303 | Range Sum Query - Immutable | | Easy | Golang |
 | 338 | Counting Bits | | Medium | Python |
 | 403 | Frog Jump | | Hard | Python |
 
