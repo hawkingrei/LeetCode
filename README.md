@@ -43,9 +43,33 @@
 | 409 | Longest Palindrome | | Easy | Golang |
 | 500 | Keyboard Row | | Easy | Golang |
 
+### Dynamic programming
+| # | Title | Solution | Difficulty | Language |
+| 5 | Longest Palindromic Substring | | Medium | Rust |
+| 10 | Regular Expression Matching | | Hard | Python |
+| 53 | Maximum Subarray | | Easy | Python | 
+| 62 | Unique Paths | | Medium | Python |
+| 63 | Unique Paths II | | Medium | Python |
+| 64 | Minimum Path Sum | | Medium | Python |
+| 70 | Climbing Stairs | | Easy | Python |
+| 91 | Decode Ways | | Medium | Python |
+| 95 | Unique Binary Search Trees II | | Medium | Python |
+| 96 | Unique Binary Search Trees | | Medium | Python |
+| 97 | Interleaving String | | Hard | Python |
+| 121 | Best Time to Buy and Sell Stock | | Easy | Python |
+| 139 | Word Break | | Medium | Python |
+| 152 | Maximum Product Subarray | | Medium | Rust |
+| 188 | Best Time to Buy and Sell Stock IV | | Hard | Python |
+| 198 | House Robber | | Easy | Python |
+| 213 | House Robber II | | Medium | Rust |
+| 221 | Maximal Square | | Medium | Golang |
+| 300 | Longest Increasing Subsequence | | Medium | Python |
+| 303 | Range Sum Query - Immutable	| | Easy | Golang |
+| 338 | Counting Bits | | Medium | Python |
+| 403 | Frog Jump | | Hard | Python |
 
 ### Linked List
-  
+
 
 ### Divide and Conquer
 	4、  Merge k Sorted Lists
