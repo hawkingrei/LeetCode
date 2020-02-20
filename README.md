@@ -33,7 +33,7 @@
 
 | # | Title | Solution | Difficulty | Language |
 | 1 | Two Sum | | Easy | Python |
-| 3 | Longest Substring Without Repeating Characters | |Medium | Python |
+| 3 | Longest Substring Without Repeating Characters | | Medium | Python |
 | 18 | 4Sum | | Medium | Python |
 | 49 | Group Anagrams | | Medium | Rust |
 | 94 | Binary Tree Inorder Traversal | | Medium | Golang |
