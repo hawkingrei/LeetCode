@@ -26,13 +26,17 @@
 | 229 | Majority Element II | | Medium | Rust |
 | 380 | Insert Delete GetRandom O(1) | | Medium | Rust |
 | 381 | Insert Delete GetRandom O(1) - Duplicates allowed | | Hard | Rust |
-| 561 | Array Partition I | | Easy | Golang | 
+| 561 | Array Partition I | | Easy | Golang |
 | 689 | Maximum Sum of 3 Non-Overlapping Subarrays | | Hard | Golang |
 
 ### Hash
 
 | # | Title | Solution | Difficulty | Language |
 | 1 | Two Sum | | Easy | Python |
+
+
+
+
 | 3 | Longest Substring Without Repeating Characters | | Medium | Python |
 | 18 | 4Sum | | Medium | Python |
 | 49 | Group Anagrams | | Medium | Rust |
