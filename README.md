@@ -93,6 +93,39 @@
 | 567 | Permutation in String | | Medium | Rust |
 | 844 | Backspace String Compare | | Easy | Rust |
 
+### String
+
+| # | Title | Solution | Difficulty | Language |
+|---| ----- | -------- | ---------- | -------- |
+| 3 | Longest Substring Without Repeating Characters | | Medium | Python |
+| 5 | Longest Palindromic Substring | | Medium | Rust |
+| 6 | ZigZag Conversion | | Medium | Rust |
+| 8 | String to Integer (atoi) | | Medium | Rust |
+| 10 | Regular Expression Matching | | Hard | Python |
+| 12 | Integer to Roman | | Medium | Python |
+| 13 | Roman to Integer | | Easy | Python |
+| 14 | Longest Common Prefix | | Easy | Python |
+| 17 | Letter Combinations of a Phone Number | | Medium | Golang |
+| 20 | Valid Parentheses | | Easy | Python |
+| 22 | Generate Parentheses | | Medium | Python |
+| 28 | Implement strStr() | | Easy | Rust |
+| 38 | Count and Say | | Easy | Python |
+| 49 | Group Anagrams | | Medium | Rust |
+| 58 | Length of Last Word | | Easy | Python |
+| 65 | Valid Number | | Hard | Python |
+| 68 | Text Justification | | Hard | Rust |
+| 91 | Decode Ways | | Medium | Python |
+| 93 | Restore IP Addresses | | Medium | Python |
+| 97 | Interleaving String | | Hard | Python |
+| 125 | Valid Palindrome | | Easy | Python |
+| 344 | Reverse String | | Easy | Golang |
+| 415 | Add Strings | | Easy | Golang |
+| 657 | Robot Return to Origin | | Easy | Golang |
+| 686 | Repeated String Match | | Easy | Golang |
+
+
+
+
 ### Linked List
 
 
