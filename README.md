@@ -105,7 +105,7 @@
 | 12 | Integer to Roman | | Medium | Python |
 | 13 | Roman to Integer | | Easy | Python |
 | 14 | Longest Common Prefix | | Easy | Python |
-| 17 | Letter Combinations of a Phone Number | | Medium | Golang |
+| 17 | Letter Combinations of a Phone Number | | Medium | Rust |
 | 20 | Valid Parentheses | | Easy | Python |
 | 22 | Generate Parentheses | | Medium | Python |
 | 28 | Implement strStr() | | Easy | Rust |
