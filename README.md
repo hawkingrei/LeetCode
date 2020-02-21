@@ -123,8 +123,28 @@
 | 657 | Robot Return to Origin | | Easy | Golang |
 | 686 | Repeated String Match | | Easy | Golang |
 
+### tree
 
-
+| # | Title | Solution | Difficulty | Language |
+|---| ----- | -------- | ---------- | -------- |
+| 94 | Binary Tree Inorder Traversal | | Medium | Golang |
+| 95 | Unique Binary Search Trees II | | Medium | Python |
+| 96 | Unique Binary Search Trees | | Medium | Python |
+| 98 | Validate Binary Search Tree | | Medium | Python |
+| 99 | Recover Binary Search Tree | | Hard | Python }
+| 100 | Same Tree | | Easy | Python |
+| 101 | Symmetric Tree | | Easy | Python |
+| 102 | Binary Tree Level Order Traversal | | Medium | Python |
+| 104 | Maximum Depth of Binary Tree | | Easy | Python |
+| 110 | Balanced Binary Tree | | Easy | Rust |
+| 144 | Binary Tree Preorder Traversal | | Medium | Golang |
+| 145 | Binary Tree Postorder Traversal | | Hard | Golang |
+| 404 | Sum of Left Leaves | | Easy | Python |
+| 515 | Find Largest Value in Each Tree Row | | Medium | Python |
+| 543 | Diameter of Binary Tree | | Easy | Python |
+| 617 | Merge Two Binary Trees | | Easy | Golang |
+| 671 | Second Minimum Node In a Binary Tree | | Easy | Rust |
+| 684 | Redundant Connection | | Medium | Rust |
 
 ### Linked List
 
