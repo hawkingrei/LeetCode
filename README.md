@@ -149,6 +149,7 @@
 | 671 | Second Minimum Node In a Binary Tree | | Easy | Rust |
 | 684 | Redundant Connection | | Medium | Rust |
 | 987 | Vertical Order Traversal of a Binary Tree | | Medium | Python |
+| 1302 | Deepest Leaves Sum | | Medium | Python |
 
 ### Linked List
 
