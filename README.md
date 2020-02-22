@@ -148,6 +148,7 @@
 | 617 | Merge Two Binary Trees | | Easy | Golang |
 | 671 | Second Minimum Node In a Binary Tree | | Easy | Rust |
 | 684 | Redundant Connection | | Medium | Rust |
+| 987 | Vertical Order Traversal of a Binary Tree | | Medium | Python |
 
 ### Linked List
 
