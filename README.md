@@ -140,6 +140,7 @@
 | 144 | Binary Tree Preorder Traversal | | Medium | Golang |
 | 145 | Binary Tree Postorder Traversal | | Hard | Golang |
 | 404 | Sum of Left Leaves | | Easy | Python |
+| 429 | N-ary Tree Level Order Traversal | | Medium | Python |
 | 515 | Find Largest Value in Each Tree Row | | Medium | Python |
 | 543 | Diameter of Binary Tree | | Easy | Python |
 | 617 | Merge Two Binary Trees | | Easy | Golang |
