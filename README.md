@@ -143,6 +143,7 @@
 | 429 | N-ary Tree Level Order Traversal | | Medium | Python |
 | 515 | Find Largest Value in Each Tree Row | | Medium | Python |
 | 543 | Diameter of Binary Tree | | Easy | Python |
+| 589 | N-ary Tree Preorder Traversal | | Easy | Python |
 | 617 | Merge Two Binary Trees | | Easy | Golang |
 | 671 | Second Minimum Node In a Binary Tree | | Easy | Rust |
 | 684 | Redundant Connection | | Medium | Rust |
