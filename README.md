@@ -137,6 +137,7 @@
 | 102 | Binary Tree Level Order Traversal | | Medium | Python |
 | 104 | Maximum Depth of Binary Tree | | Easy | Python |
 | 110 | Balanced Binary Tree | | Easy | Rust |
+| 111 | Minimum Depth of Binary Tree | | Easy | Python |
 | 144 | Binary Tree Preorder Traversal | | Medium | Golang |
 | 145 | Binary Tree Postorder Traversal | | Hard | Golang |
 | 404 | Sum of Left Leaves | | Easy | Python |
