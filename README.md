@@ -156,6 +156,7 @@
 | 965 | Univalued Binary Tree | | Easy | Python |
 | 987 | Vertical Order Traversal of a Binary Tree | | Medium | Python |
 | 1302 | Deepest Leaves Sum | | Medium | Python |
+| 1325 | Delete Leaves With a Given Value | | Medium | Python |
 
 ### Linked List
 
