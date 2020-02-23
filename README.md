@@ -149,6 +149,7 @@
 | 589 | N-ary Tree Preorder Traversal | | Easy | Python |
 | 590 | N-ary Tree Postorder Traversal | | Easy | Python |
 | 617 | Merge Two Binary Trees | | Easy | Golang |
+| 669 | Trim a Binary Search Tree | | Easy | Python |
 | 671 | Second Minimum Node In a Binary Tree | | Easy | Rust |
 | 684 | Redundant Connection | | Medium | Rust |
 | 872 | Leaf-Similar Trees | | Easy | Python |
