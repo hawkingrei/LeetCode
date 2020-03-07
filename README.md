@@ -142,6 +142,7 @@
 | 113 | Path Sum II | | Medium | Python |
 | 144 | Binary Tree Preorder Traversal | | Medium | Golang |
 | 145 | Binary Tree Postorder Traversal | | Hard | Golang |
+| 257 | Binary Tree Paths | | Easy | Python |
 | 404 | Sum of Left Leaves | | Easy | Python |
 | 429 | N-ary Tree Level Order Traversal | | Medium | Python |
 | 437 | Path Sum III | | Easy | Python |
