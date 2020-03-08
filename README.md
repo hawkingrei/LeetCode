@@ -159,6 +159,7 @@
 | 669 | Trim a Binary Search Tree | | Easy | Python |
 | 671 | Second Minimum Node In a Binary Tree | | Easy | Rust |
 | 684 | Redundant Connection | | Medium | Rust |
+| 687 | Longest Univalue Path | | Easy | Python |
 | 872 | Leaf-Similar Trees | | Easy | Python |
 | 965 | Univalued Binary Tree | | Easy | Python |
 | 987 | Vertical Order Traversal of a Binary Tree | | Medium | Python |
