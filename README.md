@@ -162,6 +162,7 @@
 | 687 | Longest Univalue Path | | Easy | Python |
 | 872 | Leaf-Similar Trees | | Easy | Python |
 | 965 | Univalued Binary Tree | | Easy | Python |
+| 979 | Distribute Coins in Binary Tree | | Medium | Python |
 | 987 | Vertical Order Traversal of a Binary Tree | | Medium | Python |
 | 1302 | Deepest Leaves Sum | | Medium | Python |
 | 1325 | Delete Leaves With a Given Value | | Medium | Python |
