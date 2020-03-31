@@ -4,7 +4,7 @@ class Solution:
             return nums[0]
         low = 0
         high = len(nums) - 1
-        while right > left:
+        while high > low:
             pivot = low + (high - low) // 2
             if nums[pivot] < nums[high]:
                 high = pivot
