@@ -1,47 +1,21 @@
-/*
- * @lc app=leetcode.cn id=200 lang=cpp
- *
- * [200] 岛屿数量
- */
-
-// @lc code=start
 class Solution {
 public:
-    int numIslands(vector<vector<char>>& grid) {
-        std::vector<std::vector<int>> visited = std::vector(grid.size(),std::vector(grid[0].size(),0));
-        int total = 0;
-        for (int i = 0; i< grid.size(); i++) {
-            for (int j = 0; j< grid[0].size(); j++) {
-               if (visited[i][j] == 1) {
-                   continue;
-               }
-               if (grid[i][j] == '1') {
-                   visitedIsland(i,j,grid,visited);
-                   total++;
-               }
+    int minPathSum(vector<vector<int>>& grid) {
+        int row = grid.size();
+        int column = grid[0].size();
+        std::vector<std::vector<int>> dp(row, std::vector<int>(column, 0));
+        dp[0][0] = grid[0][0];
+        for (int n = 1; n < row; n++) {
+            dp[n][0]= dp[n-1][0] + grid[n][0];
+        }
+        for (int n = 1; n < column; n++) {
+            dp[0][n] = dp[0][n-1] - grid[0][n];
+        }
+        for (int i = 1; i < row; i++) {
+            for (int j = 1; j < row; j++) {
+                dp[i][j] = grid[i][j] + std::min(dp[i-1][j], dp[i][j-1]);
             }
         }
-        return total;
-    }
-private:
-    void visitedIsland(int x,int y,vector<vector<char>>& grid, vector<vector<int>>& visited) {
-        if (x > grid.size()-1 || y > grid[0].size()-1) {
-            return;
-        }
-        if (visited[x][y] == 1) {
-            return;
-        }
-
-        if (grid[x][y] == '1') {
-            visited[x][y] = 1;
-            visitedIsland(x+1,y,grid,visited);
-            visitedIsland(x-1,y,grid,visited);
-            visitedIsland(x,y+1,grid,visited);
-            visitedIsland(x,y-1,grid,visited);
-        } else {
-            return;
-        }
+        return dp[row-1][column-1];
     }
 };
-// @lc code=end
-
